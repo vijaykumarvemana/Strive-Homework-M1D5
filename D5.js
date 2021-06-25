@@ -47,7 +47,7 @@ console.log(absoluteDifference)
 Write a function "boundary" which accept an integer n and returns true if n is within 20 and 100 (included) or if it's equal to 400.
 */
 const boundary = function(n){
-    if( (n >= 1 && n <= 100) || ( n==400 )){
+    if( (n >= 20 && n <= 100) || ( n==400 )){
         return true
     }
 }
@@ -133,7 +133,12 @@ Write a function "giveMeRandom" which accepts a number n and returns an array co
 */
 
 /* WRITE YOUR CODE HERE */
-
+const giveMeRandom = function (n) {
+   for (let a=[],i=n;(i=>0)&&(i<=0);++i){
+       console.log(a[i]=i)
+   }
+}
+giveMeRandom(5)
 /* WHEN YOU ARE FINISHED
 Commit and push the code to your personal GitHub repository and share the link to your commit in Eduflow.
 */
