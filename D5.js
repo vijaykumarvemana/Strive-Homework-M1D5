@@ -60,6 +60,14 @@ console.log(integer)
 Write a function "strivify" which accepts a string.
 It should add the word "Strive" in front of the given string, but if the given string already begins with "Strive", then it should just return the original string.
 */
+const strivify = function(string){
+    if (string === null || string === undefined || string.substring(0, 6) === 'Strive'){
+       return string;
+        }
+    return "Strive"+string;
+}
+console.log(strivify("StriveSchool"));
+console.log(strivify("School"));
 
 /* WRITE YOUR CODE HERE */
 
