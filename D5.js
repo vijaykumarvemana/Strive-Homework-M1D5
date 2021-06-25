@@ -107,12 +107,24 @@ console.log(reverse)
 /* EXERCISE 8
 Write a function "upperFirst" to capitalize the first letter of each word of a given string passed as a parameter.
 */
-
+const upperFirst = function (string) {
+   let splitStr = string.toLowerCase().split(' ')
+   for (let i = 0; i < splitStr.length; i++) {
+       splitStr[i] = splitStr[i].charAt(0).toUpperCase() + splitStr[i].substring(1);     
+   }
+   return splitStr.join(' ')
+}
+let capitalizeFirstLetter = upperFirst("strive school is amazing")
+console.log(capitalizeFirstLetter)
 /* WRITE YOUR CODE HERE */
 
 /* EXERCISE 9
 Write a function "cutString" to create a new string without the first and last character of a given string.
 */
+const cutString = function (string) {
+    return string.substring(1, string.length - 1);
+}
+console.log(cutString("FullStack"))
 
 /* WRITE YOUR CODE HERE */
 
