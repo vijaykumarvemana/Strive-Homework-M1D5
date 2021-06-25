@@ -32,6 +32,16 @@ console.log(sumOfTwoIntergers)
 Write a function "crazyDiff" that computes the absolute difference between a given number and 19. 
 It should return triple their absolute difference if the given number is greater than 19.
 */
+const crazyDiff = function(a){
+    if(a > 19){
+        return 3* (Math.abs(a-19))
+    }else{
+        return Math.abs(a-19)
+    }
+}
+let absoluteDifference = crazyDiff(6)
+
+console.log(absoluteDifference)
 
 /* EXERCISE 4
 Write a function "boundary" which accept an integer n and returns true if n is within 20 and 100 (included) or if it's equal to 400.
