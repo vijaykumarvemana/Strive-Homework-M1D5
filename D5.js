@@ -134,11 +134,14 @@ Write a function "giveMeRandom" which accepts a number n and returns an array co
 
 /* WRITE YOUR CODE HERE */
 const giveMeRandom = function (n) {
-   for (let a=[],i=n;(i=>0)&&(i<=0);++i){
-       console.log(a[i]=i)
-   }
-}
+   let arr = [];
+   for (let i=0, t=10; i<t; i++) {
+    arr.push(Math.round(Math.random(n) * t))
+  }
+  console.log(arr)
+ }
 giveMeRandom(5)
+
 /* WHEN YOU ARE FINISHED
-Commit and push the code to your personal GitHub repository and share the link to your commit in Eduflow.
-*/
+
+Commit and push the code to your personal GitHub repository and share the link to your commit in Eduflow.*/
