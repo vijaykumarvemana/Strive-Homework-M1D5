@@ -46,6 +46,13 @@ console.log(absoluteDifference)
 /* EXERCISE 4
 Write a function "boundary" which accept an integer n and returns true if n is within 20 and 100 (included) or if it's equal to 400.
 */
+const boundary = function(n){
+    if( (n >= 1 && n <= 100) || ( n==400 )){
+        return true
+    }
+}
+let integer = boundary(5)
+console.log(integer)
 
 /* WRITE YOUR CODE HERE */
 
